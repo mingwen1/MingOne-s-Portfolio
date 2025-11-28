@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MING ONE | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+              display: ['Oswald', 'sans-serif'],
+            },
+            colors: {
+              neon: '#CCFF00', // Fluorescent Yellow
+              zinc: {
+                950: '#050505', // Deep black
+                900: '#101010',
+                800: '#1a1a1a',
+              }
+            },
+            fontSize: {
+              'huge': '14vw',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #ffffff;
+        cursor: none; /* Hide default cursor for custom one */
+      }
+      /* Fallback for touch devices */
+      @media (hover: none) {
+        body {
+          cursor: auto;
+        }
+      }
+      ::selection {
+        background-color: #CCFF00;
+        color: #000000;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #CCFF00;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
